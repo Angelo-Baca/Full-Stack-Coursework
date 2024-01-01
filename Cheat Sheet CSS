@@ -1,0 +1,27 @@
+* {
+  margin: 0 auto;
+  font-family:'Arial Narrow', Arial, sans-serif;
+  padding: 2px;
+  text-align: center;
+}
+
+table, th, td, tr {
+  border: 1px solid;
+  padding: 0px;
+  background-color: rgba(100, 150, 175, 1);
+}
+
+nav, li {
+  display: inline;
+  width: 100%;
+  position: relative;
+}
+
+p {
+  border: 4px, solid, red;
+}
+code {
+  display: inline;
+  text-align: center;
+  color: black;
+}
