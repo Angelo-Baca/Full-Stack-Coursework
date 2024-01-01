@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<!-- This is a website "cheat sheet." In order for me to better understand certain concepts and how to structure things. The focus of this cheat sheet will be to layout all vocabulary I have been taught and establish a hierarchy of it all in both traditional and semantic HTML -->
+
+<!-- The Head is for metadata -->
+<head> 
+  <title> Angelo's Beginning Web Design Cheat Sheet </title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <header> Hello! Welcome to my cheat sheet for all things Web Design. </header>
+<!-- This is the Navigation Bar -->
+  <nav>
+    <ol>
+      <li><a href="#Head Elements"> Head Elements </a></li>
+      <li> <a href="#Nav Bar"> Nav Bar, Lists, and Specificity </a></li>
+      <li> <a href="#Main Body"> Main Body </a></li>
+      <li> <a href="#Tables"> Tables  </a></li>
+      <li> <a href="#Other Commands"> Other commands </a></li>
+      <li> <a href="#CSS Styling"> CSS Styling </a></li>
+    </ol>
+  </nav>
+<body>
+<!-- H1 -->
+  <h1> HTML and CSS: Elements, Commands, and Vocabulary </h1>
+
+<!-- Table 1 Elements in Head -->
+  <section>
+  <h2> The Hierarchy of basic HTML </h2>
+    <p> Beginning in every HTML document there must be some basic identifiers to tell the browser and computer what information is being processed.  This is the foundation of a page. All resources, stylesheets, hyperlinks, anchors, etc. are stored here</p>
+    <h3 id ="Head Elements"> All elements in the "Head" </h3>
+    <table>
+      <thead>
+        <tr>
+          <th> Tag </th>
+          <th> Name </th>
+          <th> Hierarchy </th>
+          <th> Description </th>
+        </tr>
+      </thead>
+      <tbody>
+              <!-- Row 1 Table 1 -->
+        <tr>
+          <td> <code> !DOCTYPE html </code> </td>
+          <td> Document Type  </td>
+          <td> 0 </td>
+          <td> Before any reading of the file can be done, the browser will open the file and look for this identifier. Anything outside of this identifier will neither be read nor displayed by the browser. </td>
+        </tr>
+              <!-- Row 2 Table 1 -->
+        <tr>
+          <td> html </td>
+          <td> HyperText Mark-up Language </td>
+          <td> 1 </td>
+          <td> Slightly different than the doctype tag. Anything that is a child of this parent element will be forced to be read as HTML. Even if it is incorrect. </td>
+        </tr>
+              <!-- Row 3 Table 1 -->
+        <tr>
+          <td> meta </td>
+          <td> Meta </td>
+          <td> 2 </td>
+          <td> Derived from the word "Metaphysical," this element must be placed in the "Head" element of a website. Anything in the meta section will not be displayed on the websites page. Instead the machine will use this data to help search engines. </td>
+       </tr>
+              <!-- Row 4 Table 1 -->
+       <tr>
+        <td> title </td>
+        <td> Title </td>
+        <td> 3 </td>
+        <td> This is the title of your webpage. Whatever you put here will be displayed in the tab of the browser you are using. Try to make titles short and accurate </td>
+       </tr>
+                <!-- Row 5 Table 1 -->
+       <tr>
+        <td> link </td>
+        <td> Link </td>
+        <td> 4 </td>
+        <td> Any amount of links can exist in the HTML document. A link is simply a pathway or address to an external resource. You should always put your links at the top of your document so that they don't get buried, lost, or interfere with the code below them. <strong> This includes stylesheets </strong> </td>
+       </tr>
+              <!-- Row 6 Table 1 -->
+       <tr>
+        <td> script </td>
+        <td> Script </td>
+        <td> 5 </td>
+        <td> A way to embed whatever scriptting language you are using for the website. Typically, this is Javascript </td>
+       </tr>
+              <!-- Row 7 Table 1 -->
+       <tfoot>
+        <td> base </td>
+        <td> Base </td>
+        <td> 6 </td>
+        <td> Non essential but helpful tool. Sets the base url of a website to whatever is defined inside it. <strong>base href="https://www.w3schools.com/" target="_blank" </strong> </td>
+       </tfoot>
+      </tbody>
+    </table>
+  </section>
+<!-- Table 2 that explains the Nav Bar -->
+<section>
+    <p> A really useful tool to avoid having to scroll down over a whole page is the nav bar. You probably use it all the time for convenience and this is a great way for humans to access information more quickly. They can be a little tricky and this is where we start to get into selectors, classes, and ids. There are also global selectors and inline selectors as well. </p> 
+  <h3 id="Nav Bar"> The way to build a Nav Bar and Specificity of elements</h3>
+  <table>
+    <thead> 
+      <tr>
+        <th> Tag </th>
+        <th> Name </th>
+        <th> Hierarchy </th>
+        <th> Description </th>
+      </tr>
+    </thead>
+    <tbody>
+              <!-- Row 1-->
+      <tr> 
+        <td> nav </td>
+        <td> Navigation Tag </td>
+        <td> 1 </td>
+        <td> The element tells the browser that this element is composed of a mix of links for the purpose of navigation </td>
+      </tr>
+              <!-- Row 2-->
+      <tr> 
+        <td> ol or ul </td>
+        <td> Organized or Unorganized List </td>
+        <td> 2 </td>
+        <td> This element organizes a set of information in list. If you use the OL command it will assign a numeric designation to the information. </td>
+      </tr>
+              <!-- Row 3 -->
+      <tr> 
+        <td> li </td>
+        <td> List item </td>
+        <td> 3 </td>
+        <td> This individual items belonging to its parent list. Must have a closing and opening tag. Can contain hyperlinks to external sources. </td>
+      </tr>
+              <!-- Row 4 -->
+      <tr> 
+        <td> Global selector * </td>
+        <td> In CSS, an asterisk </td>
+        <td> Least specific "4"</td>
+        <td> n CSS an asterisk will apply whatever criteria is assign under the subsequent curly brackets. </td>
+      </tr>
+              <!-- Row 5 -->
+      <tr> 
+        <td> General selector </td>
+        <td> Any tag in HTML, it can be modified in CSS simply with its tag</td>
+        <td> "3" </td>
+        <td> A tag to define the function of the element as well as a general pathway to style all elements of this type in CSS. </td>
+      </tr>
+              <!-- Row 6 -->
+      <tr> 
+        <td> class </td>
+        <td> Has a specific type in order to designate repetitive structures, such as tables. </td>
+        <td> "2" </td>
+        <td> class="Tables" inside the opening tag of set of tags. Also a way to help with CSS styling. </td>
+      </tr>
+              <!-- Row 7 -->
+      <tr> 
+        <td> id </td>
+        <td> Identification </td>
+        <td> "1" </td>
+        <td> The most specific designation we can give to a tag. Also the route to which we apply "an address" for the navigation bar. Inside an element it looks like 'h3 id="Tables" '</td>
+      </tr>
+                <!-- Row 8 -->
+      <tr> 
+        <td> !important </td>
+        <td> Overide element </td>
+        <td> "0" </td>
+        <td> An overide command that is used for inline styling of element. Whatever is marked with this tag can never be changed until the command tag is removed.  </td>
+      </tr>          
+    </tbody>
+  </table>
+</section>
+<!-- Table 3 that explains main body elements and Semantic HTML -->
+<section>
+  <p> Moving on, now we will explain the main body of HTML as well as its semantically names parts. </p>
+  <h3 id ="Main Body"> Main Body Elements and Semantic HTML commands </h3>
+  <table>
+    <!-- This is the title row -->
+    <thead> 
+      <tr>
+        <th> Tag </th>
+        <th> Name </th>
+        <th> Hierarchy </th>
+        <th> Description </th>
+      </tr>
+    </thead>
+              <!-- Row 1-->
+      <tr> 
+        <td> body </td>
+        <td> Body </td>
+        <td> 1 </td>
+        <td> The main area for any and all content that is not in the head or footer. The biggest container of a website. </td>
+      </tr>
+             <!-- Row 2 -->
+      <tr> 
+        <td> div </td>
+        <td> Division </td>
+        <td> 2 </td>
+        <td> A non speficic way to separate elements and text. Often paired with some sort of class or id to help the developer in terms of organization. <strong> This is the only separator in non semantic HTML </strong> </td>
+      </tr>
+              <!-- Row 3 -->
+      <tr> 
+        <td> head </td>
+        <td> Header </td>
+        <td> 2 </td>
+        <td> The first area of a website to be displayed. It will contain tags and data such as meta, title, and relevant links. </td>
+      </tr>
+              <!-- Row 4 -->
+      <tr> 
+        <td> nav </td>
+        <td> Naviagtion </td>
+        <td> 3 </td>
+        <td> A semantic element to help the developer identify quickly its purpose, which is create ease of informantion by giving easily distinguishable and clickable links to different areas of content. These will either be sections or articles. </td>
+      </tr>
+              <!-- Row 4 -->
+      <tr> 
+        <td> section </td>
+        <td> Section </td>
+        <td> 4 </td>
+        <td> A semantic element to help the developer more easily divide informantion a section is NOT above an article in the Hierarchy in terms of what is more important. Both sections and articles have equal weight to the browser. The difference is what's inside of them. A sections has thematic ideas. Think back to english class. Thesis, Hypothesis, Introduction, Conclusion. </td>
+      </tr>
+              <!-- Row 4 -->
+      <tr> 
+        <td> article </td>
+        <td> Article </td>
+        <td> 5 </td>
+        <td> Very similar to sections however these are more for blog posts, user comments, forum posts, journal or newspaper quotes and published articles. Articles can stand on their own we just typically put them underneath sections for professionalism. Both articles and sections are technically "div" tags.  </td>
+      </tr>
+             <!-- Row ? -->
+      <tr> 
+        <td> aside </td>
+        <td> Alongside </td>
+        <td> 4-5 </td>
+        <td> Regarding flow, anything in this tag will be displayed to the right of whatever section or article it is next too. Since we organize things from top to bottom and read items left to right. This tag is used for things that can help support the content in the section or article. It can also be styled separately in CSS.</td>
+      </tr>
+              <!-- Row ? -->
+      <tr> 
+        <td> footer </td>
+        <td> Footer </td>
+        <td> 6 </td>
+        <td> The last area of content. Whatever is in the footer will be displayed at the bottom of a page. This is a great place to give additional reference materials such as author informantion, copyright data, links and buttons that can take the user back to the top of the page or to a new one, etc.</td>
+      </tr>
+    </table>
+</section>
+<!-- Table 4 Elements in Tables -->
+<section>
+      <p> The next thing we are going to build is a table. Well actually, I'm going to list out all the elements in the tables above and explain how they come together.  </p>
+<h3 id="Tables"> The anatomy of a table in HTML </h3>
+  <table>
+    <!-- This is the title row -->
+    <thead> 
+      <tr>
+        <th> Tag </th>
+        <th> Name </th>
+        <th> Hierarchy </th>
+        <th> Description </th>
+      </tr>
+    </thead>
+    <tbody>
+              <!-- Row 1-->
+      <tr> 
+        <td> table </td>
+        <td> Table </td>
+        <td> 1 </td>
+        <td> The element that tells HTML we are building a Table. "Also known as the wrapper element." </td>
+      </tr>
+              <!-- Row 2-->
+      <tr> 
+        <td> thead </td>
+        <td> Table Head </td>
+        <td> 2 </td>
+        <td> The title row of the table. "The set of rows defining the column headers in a table" </td>
+      </tr>
+              <!-- Row 3 -->
+      <tr> 
+        <td> tbody </td>
+        <td> Table Body </td>
+        <td> 3 </td>
+        <td> The way to tell the computer that this is where the data is stored. "The set of rows containing actual table data."</td>
+      </tr>
+              <!-- Row 4-->
+      <tr> 
+        <td> tr </td>
+        <td> Table Row </td>
+        <td> 4 </td>
+        <td> Within the "table" this is how we build a row inside it and then populate each column alongside it. "Table row container." </td>
+      </tr>
+              <!-- Row 5-->
+      <tr> 
+        <td> td </td>
+        <td> Table Data </td>
+        <td> 5 </td>
+        <td> The data that gets filled in throughout the row. If there are 4 columns in the row then we will need 4 td commands. "Table row container" </td>
+      </tr>
+              <!-- Row 6-->
+      <tfoot> 
+        <td> tfoot </td>
+        <td> Table Footer </td>
+        <td> 6 </td>
+        <td> This tells the browser that this is the final row in table. However, it does not need to be the last written command in the HTML document. "The set of rows defining the footer in the table" </td>
+      </tfoot>
+    </tbody>
+  </table>
+    <p> There are a few other commands to help fill in duplicate data in table. These are the column span and row span tags. </p>
+  <table>
+      <thead> 
+      <tr>
+        <th> tag </th>
+        <th> name </th>
+        <th> hierarchy </th>
+        <th> description </th>
+      </tr>
+    </thead>
+    <tr>
+      <td> colspan </td>
+      <td> Column Span </td>
+      <td> N/A </td>
+      <td> This tells the browser how many columns this particular data input needs to be in. "Defines how many columns a td element should span" </td>
+    </tr>
+    <tr>
+      <td> <code> rowspan </code> </td>
+      <td> Row Span </td>
+      <td> N/A </td>
+      <td> This tells the browser how many rows this particular data input needs to be in. "Defines how many row a td element should span" </td>
+    </tr>
+  </table>
+</section>
+<!-- Table 5 that explains other commands -->
+<section>
+      <p> Finally, here is a list of commands that are still relevant but not included in the above.  </p>
+<h3 id="Other Commands"> Other relevant and important commands. </h3>
+  <table>
+    <!-- This is the title row -->
+    <thead> 
+      <tr>
+        <th> Tag </th>
+        <th> Name </th>
+        <th> Hierarchy </th>
+        <th> Description </th>
+      </tr>
+    </thead>
+    <tbody>
+              <!-- Row 1-->
+      <tr> 
+        <td> "!-- text --" </td>
+        <td> Comment surround by carrot brackets</td>
+        <td> N/A </td>
+        <td> The command to include comments in our website that are speficic to the developer and will not be displayed to the user. </td>
+      </tr>
+              <!-- Row 2-->
+      <tr> 
+        <td> a </td>
+        <td> anchors </td>
+        <td> N/A </td>
+        <td> A way to link attributes, files, and any other resources that is included on the same page. Similar to an ID or class. It will tie an element to another. e.g. The Links in the Nav Bar are anchor to their respective titles. </td>
+      </tr>
+              <!-- Row 3 -->
+      <tr> 
+        <td> source </td>
+        <td> Source </td>
+        <td> N/A </td>
+        <td> A way to tell the website the origin of a media tag and where to find the the root file.  This will be local to the computer of the developer or to the source server. Cannot source other websites. <strong> Instead use href. </strong></td>
+      </tr>
+              <!-- Row 4-->
+      <tr> 
+        <td> href </td>
+        <td> Hyperlink Reference </td>
+        <td> N/A </td>
+        <td> A way to tell the computer which URL to go to.  </td>
+      </tr>
+              <!-- Row 5-->
+      <tr> 
+        <td> URL </td>
+        <td> Uniform Resource Locator </td>
+        <td> N/A </td>
+        <td> The address of the website. A reference to resource that specifies its location AND the specific protocol for retrieving it. An <em> Absolute URL </em> is a URL to a completely separated website. Whereas a <em> Relative URL </em> is reference to another source contained within the current website. </td>
+      </tr>
+              <!-- Row 6-->
+      <tfoot> 
+        <td> media </td>
+        <td> Media </td>
+        <td> N/A </td>
+        <td> This tells the browser that element is some sort of video, audio file, or picture. Combine this command with its respective href, URL, and source (if needed) to make sure that the media is displayed properly. </td>
+      </tfoot>
+    </tbody>
+  </table>
+    <p> There are a few other commands to help fill in duplicate data in table. These are the column span and row span tags.
+  <table>
+      <thead> 
+      <tr>
+        <th> tag </th>
+        <th> name </th>
+        <th> hierarchy </th>
+        <th> description </th>
+      </tr>
+    </thead>
+    <tr>
+      <td> colspan </td>
+      <td> Column Span </td>
+      <td> N/A </td>
+      <td> This tells the browser how many columns this particular data input needs to be in. "Defines how many columns a td element should span" </td>
+    </tr>
+    <tr>
+      <td> <code> rowspan </code> </td>
+      <td> Row Span </td>
+      <td> N/A </td>
+      <td> This tells the browser how many rows this particular data input needs to be in. "Defines how many row a td element should span" </td>
+    </tr>
+  </table>
+</section>
+</body>
+
+
+
+
+
