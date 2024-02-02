@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Tea Cozy</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <meta> 
+</head>
+<body>
+<header>
+  <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png?_gl=1*1i5upnq*_ga*NzQ2MjY4NzY4LjE2OTQ2MjIyNTM.*_ga_3LRZM6TM9L*MTcwNjAzMjkxMy4xMTcuMS4xNzA2MDMyOTM2LjM3LjAuMA" id="logo">
+  <nav>
+    <ul>
+      <li class="nav"> <a href="#mission photo"> Mission </a></li>
+      <li class="nav"> <a href="tea"> Featured Tea </a></li>
+      <li class="nav"> <a href="locations"> Locations </a> </li>
+    </ul>
+  </nav>
+</header>
+<div class="missioncontainer">
+  <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*1sjjk2b*_ga*NzQ2MjY4NzY4LjE2OTQ2MjIyNTM.*_ga_3LRZM6TM9L*MTcwNjI4NzExOC4xMjEuMS4xNzA2Mjg3MTIzLjU1LjAuMA..">
+  <h2 id="missionh2"> Our Mission </h2>
+  <h4 id="missionh4"> Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea </h4>
+</div>
+<div class="ToTM">
+  <h2 id="teatitle"> Tea of the Month </h2>
+  <h4 id="teahook"> What's steeping at Tea Cozy? </h4>
+  <!-- First three photos for tea -->
+  <img class="smallcontainer" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg?_gl=1*uo018k*_ga*NzQ2MjY4NzY4LjE2OTQ2MjIyNTM.*_ga_3LRZM6TM9L*MTcwNjI5MzU4NS4xMjIuMS4xNzA2MjkzNjAxLjQ0LjAuMA..">
+  <img class="smallcontainer" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg?_gl=1*4yvj6z*_ga*NzQ2MjY4NzY4LjE2OTQ2MjIyNTM.*_ga_3LRZM6TM9L*MTcwNjI5MzU4NS4xMjIuMS4xNzA2MjkzNjAxLjQ0LjAuMA..">
+  <img class="smallcontainer" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg?_gl=1*4yvj6z*_ga*NzQ2MjY4NzY4LjE2OTQ2MjIyNTM.*_ga_3LRZM6TM9L*MTcwNjI5MzU4NS4xMjIuMS4xNzA2MjkzNjAxLjQ0LjAuMA..">
+
+  <!-- Tea of the month division -->
+  <h4 id="teadescription"> Fall Berry Blitz </h4>
+  <h4 id="teadescription"> Spiced Rum Tea </h4>
+  <h4 id="teadescription"> Seasonal Donuts </h4>
+  <img class="smallcontainer" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg?_gl=1*y6eldo*_ga*NzQ2MjY4NzY4LjE2OTQ2MjIyNTM.*_ga_3LRZM6TM9L*MTcwNjI5MzU4NS4xMjIuMS4xNzA2MjkzNjAxLjQ0LjAuMA..">
+  <img class="smallcontainer" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg?_gl=1*y6eldo*_ga*NzQ2MjY4NzY4LjE2OTQ2MjIyNTM.*_ga_3LRZM6TM9L*MTcwNjI5MzU4NS4xMjIuMS4xNzA2MjkzNjAxLjQ0LjAuMA..">
+  <p>
+  <h4 id="teadescription"> Myrtle Ave Tea </h4>
+  <h4 id="teadescription"> Bedford Bizarre Tea </h4>
+  </p>
+</div>
+
+<div class="locationcontainer">
+  <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1nanvna*_ga*NzQ2MjY4NzY4LjE2OTQ2MjIyNTM.*_ga_3LRZM6TM9L*MTcwNjYzMDE5OC4xMjMuMS4xNzA2NjMwMjA0LjU0LjAuMA.." id="locationbackground"> 
+  <h2 id="locationsh2"> Locations </h2>
+  <div class="address" id="address1"> 
+    <h3> Downtown </h3>
+      <p> 384 West 4th Street </p>
+      <p> Suite 108 </p>
+      <p> Portland, Maine </p>
+  </div>
+
+<div class="address" id="address2"> 
+  <h3> East Bayside </h3>
+      <p> 3433 Phisherman's Avenue </p>
+      <p> (Northwest Corner) </p>
+      <p> Portland, Maine </p>
+</div>
+
+<div class="address" id="address3"> 
+      <h3> Oakdale </h3>
+      <p> 515 Crescent Avenue </p>
+      <p> Second Floor </p>
+      <p> Portland, Maine </p>
+  </div>
+</div>
+
+<div class="contactinfo">
+  <h2> The Tea Cozy </h2>
+    <h5> contact@theteacozy.com </h5>
+    <h5> 917-555-8904 </h5>
+</div>
+<div class="copyright">
+  <h5> copyright of Tea Cozy 2017 </h5>
+</div>
+<footer>
+  <h5> *Not a legitimate website* </h5>
+  <h5> *Developed by Angelo Baca * </h5>
+
+  </body>
+</html>
