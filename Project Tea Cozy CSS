@@ -1,0 +1,191 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+  height: 69px;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  z-index: 1000;
+}
+
+li.nav{
+  text-decoration: underline;
+  display: inline-flex;
+  font-size: 20px;
+  text-align: right;
+  justify-content: flex-end;
+  margin: auto;
+  margin-left: 10px;
+}
+li.hover {
+  text-decoration: none;
+  color: blue;
+}
+
+#logo {
+  display: inline-flex;
+  height: 50px;
+  margin: auto;
+  justify-content: flex-start;
+}
+
+.missionccontainer {
+  position: relative;
+  width: 1200px;
+  height: 700px;
+}
+.missionccontainer img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#missionh2 {
+  background-color: black;
+  opacity: 1;
+  text-align: center;
+  justify-content: center; 
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
+#missionh4 {
+  background-color: black;
+  opacity: 1;
+  text-align: center;
+  justify-content: center; 
+  position: absolute;
+  top: 55%;
+  width: 1250px;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+.ToTM {
+  width: 1000px;
+  padding-top: 40px;
+}
+
+#teatitle {
+  padding-bottom: 10px;
+}
+
+#teahook {
+  padding-bottom: 10px;
+}
+.smallcontainer {
+  width: 300px;
+  height: 200px;
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#teadescription {
+  width: 300px;
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.locationcontainer{
+  position: relative;
+  height: 500px;
+  width: 1200px;
+  display: inline-flex;
+  justify-content: center;
+
+}
+.locationcontainer img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#locationsh2 {
+  background-color: transparent;
+  opacity: 1;
+  text-align: center;
+  justify-content: center; 
+  position: absolute;
+  top: 15%;
+  width: 1200px;
+  height: 40px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+
+.address {
+  margin-bottom: 2em;
+  background-color: black;
+  opacity: 1;
+  text-align: center;
+  justify-content: center; 
+  position: absolute;
+  top: 35%;
+  width: 300px;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  z-index: 1;
+}
+.address h3 {
+  background-color: black;
+  opacity: 1;
+  padding-bottom: 8px;
+}
+.address p {
+  background-color: black;
+  opacity: 1;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+#address1 {
+  left: 5%;
+}
+
+#address3 {
+  right: 5%;
+}
+
+.contactinfo {
+  height: 200px;
+}
+
+.contactinfo h2 {
+  margin-bottom: 32px;
+  font-size: 1.5em;
+}
+.contactinfo h5 {
+  font-size: 0.8em;
+  margin-bottom: 16px;
+}
+
+.copyright h5 {
+  text-align: left;
+  font-size: 0.8em;
+  padding-left: 20px;
+}
+
+footer h5 {
+  text-align: right;
+  font-style: italic;
+  padding-right: 20px;
+  font-size: 0.8em;
+}
