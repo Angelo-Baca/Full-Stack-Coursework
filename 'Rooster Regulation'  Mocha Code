@@ -1,0 +1,42 @@
+const assert = require('assert');
+const Rooster = require('../index');
+
+describe('Rooster', () => {
+  describe('.announceDawn', () => {
+    it('returns a rooster call', () => {
+      // Setup
+      const expected = 'cock-a-doodle-doo!';
+      // Exercise
+      const actual = Rooster.announceDawn();
+      // Verify 
+      assert.strictEqual(actual, expected)
+       });
+  describe('.timeAtDawn', () => {
+    it('returns its argument as a string', () => {
+        // Setup
+          // Need some form of input so that whatever gets passed into the expected control value also gets passed into the object we are trying to evaulate.
+          const inputNum = 6
+        const expected = '6';
+        // Exercise
+        const actual = Rooster.timeAtDawn(inputNum);
+        // Verify
+        assert.strictEqual(actual, expected)
+      });
+  it('throws a range error if passed a number less than 0', () => {
+  const inputNumber = -1;
+  const expected = RangeError;
+
+ assert.throws(() => {
+    Rooster.timeAtDawn(inputNumber); // Make sure this calls throw new RangeError();
+  }, expected);
+});
+  it('throws an error is passed a number greater than 23', () => {
+  const input = 24;
+  const expected = RangeError;
+  assert.throws(() => {
+    Rooster.timeAtDawn(input);
+  }, expected);
+  })
+      })
+    });
+  });
