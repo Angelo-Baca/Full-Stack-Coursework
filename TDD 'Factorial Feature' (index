@@ -1,0 +1,13 @@
+const Calculate = {
+ factorial(input) {
+    let result = 1;
+    let i = input;
+    while (i > 1) {
+      result *= i;
+      i--;
+    }
+    return result;
+  }
+}
+
+module.exports = Calculate;
