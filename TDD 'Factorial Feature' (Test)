@@ -1,0 +1,27 @@
+var assert = require("assert");
+var Calculate =  require('../index.js')
+
+describe('Calculate', () => {
+  describe('.factorial', () => {
+    it('The output of 5! is equal to 120', () => {
+      // Setup
+      const input = 5;
+      const expected = 120;
+      // Exercise
+      const actual = Calculate.factorial(5)
+
+      // Verify
+      assert.equal(actual, expected)
+      
+    });
+    it('Covers the edge case of 0!', () => {
+      // Setup
+      const input = 0;
+      const expected = 1;
+      // Exercise
+      const actual = Calculate.factorial(0);
+      // Verify
+      assert.equal(actual, expected)
+    })
+  });
+});
